@@ -34,14 +34,19 @@
 .fab_contenedor dl{
   transition: .5s;
   margin: 0px;
-  visibility: hidden;
-  opacity: 0;
   display: flex;
   flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
 }
 .fab_contenedor dl dt button{
   transition: .5s;
-  transform: scale(.4) translateY(40px) translateX(0px);
+  transform: scale(.4) translateY(-40px) translateX(0px);
+}
+
+.visible{
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 /*Tamaño de botones*/
 /*Enorme*/
@@ -213,4 +218,89 @@
 }
 .fab.purple:hover{
   background: #5829bb !important;
+}
+/*Posiciones*/
+.transform{
+  transform: scale(1) translateY(0px) translateX(0px) !important;
+}
+.fab_contenedor.top-left.vertical dl button,
+.fab_contenedor.top-right.vertical dl button,
+.fab_contenedor.top-left dl button,
+.fab_contenedor.top-right dl button{
+  transform: scale(.4) translateY(-40px) translateX(0px);
+}
+.fab_contenedor.bottom-left.vertical dl button,
+.fab_contenedor.bottom-right.vertical dl button,
+.fab_contenedor.bottom-left dl button,
+.fab_contenedor.bottom-right dl button{
+  transform: scale(.4) translateY(40px) translateX(0px);
+}
+/*default*/
+.fab_contenedor.default{
+  left: 10px;
+  top: 10px;
+}
+/*Arriba izquiera*/
+.fab_contenedor.top-left{
+  left: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.fab_contenedor.top-left.vertical , .fab_contenedor.top-left.vertical dl{
+  flex-direction: column-reverse !important;
+}
+.fab_contenedor.top-left.horizontal, .fab_contenedor.top-left.horizontal dl{
+  flex-direction: row-reverse !important;
+}
+.fab_contenedor.top-left.horizontal dl button{
+  transform: scale(.4) translateY(0px) translateX(-40px);
+}
+/*Arriba derecha*/
+.fab_contenedor.top-right{
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.fab_contenedor.top-right.vertical , .fab_contenedor.top-right.vertical dl{
+  flex-direction: column-reverse !important;
+}
+.fab_contenedor.top-right.horizontal, .fab_contenedor.top-right.horizontal dl{
+  flex-direction: row !important;
+}
+.fab_contenedor.top-right.horizontal dl button{
+  transform: scale(.4) translateY(0px) translateX(40px);
+}
+/*Abajo izquierda*/
+.fab_contenedor.bottom-left{
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.fab_contenedor.bottom-left.vertical , .fab_contenedor.bottom-left.vertical dl{
+  flex-direction: column !important;
+}
+.fab_contenedor.bottom-left.horizontal, .fab_contenedor.bottom-left.horizontal dl{
+  flex-direction: row-reverse !important;
+}
+.fab_contenedor.bottom-left.horizontal dl button{
+  transform: scale(.4) translateY(0px) translateX(-40px);
+}
+/*Abajo derecha*/
+.fab_contenedor.bottom-right{
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.fab_contenedor.bottom-right.vertical , .fab_contenedor.bottom-right.vertical dl{
+  flex-direction: column !important;
+}
+.fab_contenedor.bottom-right.horizontal, .fab_contenedor.bottom-right.horizontal dl{
+  flex-direction: row !important;
+}
+.fab_contenedor.bottom-right.horizontal dl button{
+  transform: scale(.4) translateY(0px) translateX(40px);
 }
