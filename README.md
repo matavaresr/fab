@@ -10,6 +10,7 @@ Requiere:
 <ul>
  <li>JQuery, proximamente solo Javascript Vanilla.</li>
 </ul>
+
 Su funcionamiento es el siguiente:
 
 Para poder usar la libreria, se necesita llamar a una funcion de la siguiente manera:
