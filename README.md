@@ -3,6 +3,7 @@ Floating Action Button Library for Javascript whit JQuery
 
 Libreria creada para generar botones flotantes, con acciones determinadas por el programador, de una manera sencilla.
 
+Requiere:
 <ul>
  <li>JQuery, proximamente solo Javascript Vanilla.</li>
 </ul>
