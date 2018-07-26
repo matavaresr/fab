@@ -20,27 +20,24 @@ var nombre_variable = new Fab(json)
 Con esta funcion previamente llamada, necesita un parametro para poder funcionar, el cual es un json con datos requeridos, a continuacion se muestran:
 
 <ul>
-<li>selector: selector utilizado en HTML</li>
-<li>button: {<br>
-		&nbsp;style: clase que se le quiere poner al boton principal<br>
- 		html: datos que se quieran insertar en la etiqueta <button><br>
- 	}</li>
-<li>selector: selector utilizado en HTML</li>
-<li>selector: selector utilizado en HTML</li>
-<li>selector: selector utilizado en HTML</li>
-<li>selector: selector utilizado en HTML</li>
-<li>selector: selector utilizado en HTML</li>
-<li>selector: selector utilizado en HTML</li>
-	button: {
-		style: "clase que se le quiere poner al boton principal",<br>
- 		html: "datos que se quieran insertar en la etiqueta <button>"<br>
- 	},<br>
-	icon:{<br>
-		style: "clase que se le quiere poner al icono del boton principal",<br>
-		html: "datos que se quieran insertar en la etiqueta <i>"<br>
-	},<br>
-	position: "top-left || top-right || bottom-left || bottom-right",<br>
-	direction: "horizontal || vertical",<br>
+	<li>selector: selector utilizado en HTML</li>
+	<li>button: {
+		&nbsp; &nbsp; style: clase que se le quiere poner al boton principal
+		&nbsp; &nbsp; html: datos que se quieran insertar en la etiqueta <button>
+		}
+	</li>
+	<li>icon: {
+		&nbsp; &nbsp; style: clase que se le quiere poner al icono del boton principal
+		&nbsp; &nbsp; html: datos que se quieran insertar en la etiqueta <i>
+		}
+	</li>
+	<li>position: top-left || top-right || bottom-left || bottom-right</li>
+	<li>direction: horizontal || vertical</li>
+	<li>selector: selector utilizado en HTML</li>
+	<li>selector: selector utilizado en HTML</li>
+	<li>selector: selector utilizado en HTML</li>
+	
+
 	buttons:[<br>
 		{<br>
 			button: {<br>
