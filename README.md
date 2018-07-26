@@ -33,26 +33,27 @@ Con esta funcion previamente llamada, necesita un parametro para poder funcionar
 	</li>
 	<li>position: top-left || top-right || bottom-left || bottom-right</li>
 	<li>direction: horizontal || vertical</li>
-	<li>selector: selector utilizado en HTML</li>
+	<li>buttons:[<br>
+		&nbsp; &nbsp;{<br>
+				&nbsp; &nbsp;button: {<br>
+					&nbsp; &nbsp;style: clase que se le va a dar a los botones con acciones<br>
+					&nbsp; &nbsp;html: datos que se quieran insertar en la etiqueta <button><br>
+				&nbsp; &nbsp;}<br>
+				&nbsp; &nbsp;icon:{<br>
+					&nbsp; &nbsp;style: clase que se le va a dar a los iconos que contienen botones con acciones<br>
+					&nbsp; &nbsp;html: "datos que se quieran insertar en la etiqueta <i><br>
+				&nbsp; &nbsp;}<br>
+				&nbsp; &nbsp;onClick: function(){<br>
+					&nbsp; &nbsp;funcion que se va a ejecutar al momento de darle click al boton	<br>
+				&nbsp; &nbsp;}<br>
+			&nbsp; &nbsp;}<br>
+		]<br>
+	</li>
 	<li>selector: selector utilizado en HTML</li>
 	<li>selector: selector utilizado en HTML</li>
 	
 
-	buttons:[<br>
-		{<br>
-			button: {<br>
-				style: "clase que se le va a dar a los botones con acciones",<br>
-				html: "datos que se quieran insertar en la etiqueta <button>"<br>
-			},<br>
-			icon:{<br>
-				style: "clase que se le va a dar a los iconos que contienen botones con acciones",<br>
-				html: "datos que se quieran insertar en la etiqueta <i>"<br>
-			},<br>
-			onClick: function(){<br>
-				funcion que se va a ejecutar al momento de darle click al boton	<br>
-			}<br>
-		},<br>
-	],<br>
+
 	onOpen: function(){<br>
 		funcion que se va a ejecutar al momento de que se abra el menu<br>
 	},<br>
