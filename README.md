@@ -18,11 +18,40 @@ Para poder usar la libreria, se necesita llamar a una funcion de la siguiente ma
 <b>var nombre_variable = new Fab(json)</b>
 
 Con esta funcion previamente llamada, necesita un parametro para poder funcionar, el cual es un json con datos requeridos, a continuacion se muestran:
-<code>
-<ul>
- <li>selector: cualquier tipo de selector usado en HTML, CSS y Javascript</li>
- <li>selector: cualquier tipo de selector usado en HTML, CSS y Javascript</li>
-</ul>
-</code>
 
-	
+json = {<br>
+	selector: "selector utilizado en HTML",<br>
+	button: {<br>
+		style: "clase que se le quiere poner al boton principal",<br>
+ 		html: "datos que se quieran insertar en la etiqueta <button>"<br>
+ 	},<br>
+	icon:{<br>
+		style: "clase que se le quiere poner al icono del boton principal",<br>
+		html: "datos que se quieran insertar en la etiqueta <i>"<br>
+	},<br>
+	position: "top-left || top-right || bottom-left || bottom-right",<br>
+	direction: "horizontal || vertical",<br>
+	buttons:[<br>
+		{<br>
+			button: {<br>
+				style: "clase que se le va a dar a los botones con acciones",<br>
+				html: "datos que se quieran insertar en la etiqueta <button>"<br>
+			},<br>
+			icon:{<br>
+				style: "clase que se le va a dar a los iconos que contienen botones con acciones",<br>
+				html: "datos que se quieran insertar en la etiqueta <i>"<br>
+			},<br>
+			onClick: function(){<br>
+				funcion que se va a ejecutar al momento de darle click al boton	<br>
+			}<br>
+		},<br>
+	],
+	onOpen: function(){
+		funcion que se va a ejecutar al momento de que se abra el menu
+	},
+	onClose: function(){
+		funcion que se va a ejecutar al momento de que se cierre el menu
+	}
+});
+
+
