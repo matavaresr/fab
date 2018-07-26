@@ -21,10 +21,10 @@ Con esta funcion previamente llamada, necesita un parametro para poder funcionar
 
 <ul>
 	<li>selector: selector utilizado en HTML</li>
-	<li>button: {
-		&nbsp; &nbsp; style: clase que se le quiere poner al boton principal
-		&nbsp; &nbsp; html: datos que se quieran insertar en la etiqueta <button>
-		}
+	<li>button: {<br>
+		&nbsp; &nbsp; style: clase que se le quiere poner al boton principal<br>
+		&nbsp; &nbsp; html: datos que se quieran insertar en la etiqueta <button><br>
+		}<br>
 	</li>
 	<li>icon: {
 		&nbsp; &nbsp; style: clase que se le quiere poner al icono del boton principal
