@@ -44,14 +44,14 @@ json = {<br>
 			onClick: function(){<br>
 				funcion que se va a ejecutar al momento de darle click al boton	<br>
 			}<br>
-		},<br>
-	],
-	onOpen: function(){
-		funcion que se va a ejecutar al momento de que se abra el menu
-	},
-	onClose: function(){
-		funcion que se va a ejecutar al momento de que se cierre el menu
-	}
+		},<br><
+	],<br>
+	onOpen: function(){<br>
+		funcion que se va a ejecutar al momento de que se abra el menu<br>
+	},<br>
+	onClose: function(){<br>
+		funcion que se va a ejecutar al momento de que se cierre el menu<br>
+	}<br>
 });
 
 
