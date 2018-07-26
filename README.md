@@ -26,10 +26,10 @@ Con esta funcion previamente llamada, necesita un parametro para poder funcionar
 		&nbsp; &nbsp; html: datos que se quieran insertar en la etiqueta <button><br>
 		}<br>
 	</li>
-	<li>icon: {
-		&nbsp; &nbsp; style: clase que se le quiere poner al icono del boton principal
-		&nbsp; &nbsp; html: datos que se quieran insertar en la etiqueta <i>
-		}
+	<li>icon: {<br>
+		&nbsp; &nbsp; style: clase que se le quiere poner al icono del boton principal<br>
+		&nbsp; &nbsp; html: datos que se quieran insertar en la etiqueta <i><br>
+		}<br>
 	</li>
 	<li>position: top-left || top-right || bottom-left || bottom-right</li>
 	<li>direction: horizontal || vertical</li>
