@@ -19,9 +19,19 @@ var nombre_variable = new Fab(json)
 
 Con esta funcion previamente llamada, necesita un parametro para poder funcionar, el cual es un json con datos requeridos, a continuacion se muestran:
 
-json = {<br>
-	selector: "selector utilizado en HTML",<br>
-	button: {<br>
+<ul>
+<li>selector: selector utilizado en HTML</li>
+<li>button: {<br>
+		&nbsp;style: clase que se le quiere poner al boton principal<br>
+ 		html: datos que se quieran insertar en la etiqueta <button><br>
+ 	}</li>
+<li>selector: selector utilizado en HTML</li>
+<li>selector: selector utilizado en HTML</li>
+<li>selector: selector utilizado en HTML</li>
+<li>selector: selector utilizado en HTML</li>
+<li>selector: selector utilizado en HTML</li>
+<li>selector: selector utilizado en HTML</li>
+	button: {
 		style: "clase que se le quiere poner al boton principal",<br>
  		html: "datos que se quieran insertar en la etiqueta <button>"<br>
  	},<br>
@@ -53,4 +63,4 @@ json = {<br>
 		funcion que se va a ejecutar al momento de que se cierre el menu<br>
 	}<br>
 });
-
+</ul>
