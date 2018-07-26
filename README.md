@@ -15,7 +15,7 @@ Su funcionamiento es el siguiente:
 
 Para poder usar la libreria, se necesita llamar a una funcion de la siguiente manera:
 
-<b>var nombre_variable = new Fab(json)</b>
+var nombre_variable = new Fab(json)
 
 Con esta funcion previamente llamada, necesita un parametro para poder funcionar, el cual es un json con datos requeridos, a continuacion se muestran:
 
@@ -44,7 +44,7 @@ json = {<br>
 			onClick: function(){<br>
 				funcion que se va a ejecutar al momento de darle click al boton	<br>
 			}<br>
-		},<br><
+		},<br>
 	],<br>
 	onOpen: function(){<br>
 		funcion que se va a ejecutar al momento de que se abra el menu<br>
