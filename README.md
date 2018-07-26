@@ -19,7 +19,10 @@ Para poder usar la libreria, se necesita llamar a una funcion de la siguiente ma
 
 Con esta funcion previamente llamada, necesita un parametro para poder funcionar, el cual es un json con datos requeridos, a continuacion se muestran:
 <code>
+<ul>
  <li>selector: cualquier tipo de selector usado en HTML, CSS y Javascript</li>
+ <li>selector: cualquier tipo de selector usado en HTML, CSS y Javascript</li>
+</ul>
 </code>
 
 	
