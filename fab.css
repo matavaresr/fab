@@ -1,5 +1,5 @@
 /*Clase madre*/
-.fab{
+.fab_element{
   border: 0px !important;
   border-radius: 70px !important;
   width: 50px;
@@ -16,22 +16,24 @@
   cursor: pointer;
   outline: none;
 }
-.fab i{
+.fab_element i{
   font-size: 24px;
-  margin: 0px;
 }
-.fab:hover{
+.fab_element:hover, button.fab_element.selected{
   background: #cacbcd;
 }
-/*fab contenedor*/
-.fab_contenedor{
+.fab_element.primary > i{
+  transition: .3s;
+}
+/*fab_element contenedor*/
+.fab_element_contenedor{
   position: absolute;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
-.fab_contenedor dl{
+.fab_element_contenedor dl{
   transition: .5s;
   margin: 0px;
   display: flex;
@@ -39,7 +41,7 @@
   visibility: hidden;
   opacity: 0;
 }
-.fab_contenedor dl dt button{
+.fab_element_contenedor dl dt button{
   transition: .5s;
   transform: scale(.4) translateY(-40px) translateX(0px);
 }
@@ -50,7 +52,7 @@
 }
 /*Tamaño de botones*/
 /*Enorme*/
-.fab.huge{
+.fab_element.huge{
   width: 80px !important;
   height: 80px !important;
   min-width: 80px;
@@ -58,11 +60,11 @@
   min-height: 80px;
   max-height: 80px;
 }
-.fab.huge i{
+.fab_element.huge i{
   font-size: 28px !important;
 }
 /*Grande*/
-.fab.big{
+.fab_element.big{
   width: 70px !important;
   height: 70px !important;
   min-width: 70px;
@@ -70,11 +72,11 @@
   min-height: 70px;
   max-height: 70px;
 }
-.fab.big i{
+.fab_element.big i{
   font-size: 23px !important;
 }
 /*largo*/
-.fab.large{
+.fab_element.large{
   width: 60px !important;
   height: 60px !important;
   min-width: 60px;
@@ -83,11 +85,11 @@
   max-height: 60px;
 
 }
-.fab.large i{
+.fab_element.large i{
   font-size: 20px !important;
 }
 /*Mediano*/
-.fab.medium{
+.fab_element.medium{
   width: 50px !important;
   height: 50px !important;
   min-width: 50px;
@@ -95,11 +97,11 @@
   min-height: 50px;
   max-height: 50px;
 }
-.fab.medium i{
+.fab_element.medium i{
   font-size: 17px !important;
 }
 /*Chico*/
-.fab.small{
+.fab_element.small{
   width: 40px !important;
   height: 40px !important;
   min-width: 40px;
@@ -107,11 +109,11 @@
   min-height: 40px;
   max-height: 40px;
 }
-.fab.small i{
+.fab_element.small i{
   font-size: 13px !important;
 }
 /*Diminuto*/
-.fab.tiny{
+.fab_element.tiny{
   width: 30px !important;
   height: 30px !important;
   min-width: 30px;
@@ -119,188 +121,188 @@
   min-height: 30px;
   max-height: 30px;
 }
-.fab.tiny i{
+.fab_element.tiny i{
   font-size: 11px !important;
 }
 /*Colores para los botones*/
 /*Rojo*/
-.fab.red{
+.fab_element.red{
   background: #db2828 !important;
   color: white !important;
 }
-.fab.red:hover{
+.fab_element.red:hover, .fab_element.red.selected{
   background: #d01919 !important;
 }
 /*Amarillo*/
-.fab.yellow{
+.fab_element.yellow{
   background: #eaae00 !important;
   color: white !important;
 }
-.fab.yellow:hover{
+.fab_element.yellow:hover, .fab_element.yellow.selected{
   background: #fbbd08 !important;
 }
 /*Naranja*/
-.fab.orange{
+.fab_element.orange{
   background: #f2711c !important;
   color: white !important;
 }
-.fab.orange:hover{
+.fab_element.orange:hover, .fab_element.orange.selected{
   background: #f26202 !important;
 }
 /*Oliva*/
-.fab.olive{
+.fab_element.olive{
   background: #b5cc18 !important;
   color: white !important;
 }
-.fab.olive:hover{
+.fab_element.olive:hover, .fab_element.olive.selected{
   background: #a7bd0d !important;
 }
 /*Verde*/
-.fab.green{
+.fab_element.green{
   background: #21ba45 !important;
   color: white !important;
 }
-.fab.green:hover{
+.fab_element.green:hover, .fab_element.green.selected{
   background: #16ab39 !important;
 }
 /*Verde azulado*/
-.fab.teal{
+.fab_element.teal{
   background: #00b5ad !important;
   color: white !important;
 }
-.fab.teal:hover{
+.fab_element.teal:hover, .fab_element.teal.selected{
   background: #009c95 !important;
 }
 /*Azul*/
-.fab.blue{
+.fab_element.blue{
   background: #2185d0 !important;
   color: white !important;
 }
-.fab.blue:hover{
+.fab_element.blue:hover, .fab_element.blue.selected{
   background: #1678c2 !important;
 }
 /*Cafe*/
-.fab.brown{
+.fab_element.brown{
   background: #a5673f !important;
   color: white !important;
 }
-.fab.brown:hover{
+.fab_element.brown:hover, .fab_element.brown.selected{
   background: #975b33 !important;
 }
 /*Gris*/
-.fab.gray{
+.fab_element.gray{
   background: #e0e1e2 !important;
   color: rgba(0,0,0,.8) !important;
 }
-.fab.gray:hover{
+.fab_element.gray:hover, .fab_element.gray.selected{
   background: #cacbcd !important;
 }
 /*Negro*/
-.fab.black{
+.fab_element.black{
   background: #1b1c1d !important;
   color: white !important;
 }
-.fab.black:hover{
+.fab_element.black:hover, .fab_element.black.selected{
   background: #27292a !important;
 }
 /*Pink*/
-.fab.pink{
+.fab_element.pink{
   background: #e03997 !important;
   color: white !important;
 }
-.fab.pink:hover{
+.fab_element.pink:hover, .fab_element.pink.selected{
   background: #e61a8d !important;
 }
 /*Morado*/
-.fab.purple{
+.fab_element.purple{
   background: #6435c9 !important;
   color: white !important;
 }
-.fab.purple:hover{
+.fab_element.purple:hover, .fab_element.purple.selected{
   background: #5829bb !important;
 }
 /*Posiciones*/
 .transform{
   transform: scale(1) translateY(0px) translateX(0px) !important;
 }
-.fab_contenedor.top-left.vertical dl button,
-.fab_contenedor.top-right.vertical dl button,
-.fab_contenedor.top-left dl button,
-.fab_contenedor.top-right dl button{
+.fab_element_contenedor.top-left.vertical dl button,
+.fab_element_contenedor.top-right.vertical dl button,
+.fab_element_contenedor.top-left dl button,
+.fab_element_contenedor.top-right dl button{
   transform: scale(.4) translateY(-40px) translateX(0px);
 }
-.fab_contenedor.bottom-left.vertical dl button,
-.fab_contenedor.bottom-right.vertical dl button,
-.fab_contenedor.bottom-left dl button,
-.fab_contenedor.bottom-right dl button{
+.fab_element_contenedor.bottom-left.vertical dl button,
+.fab_element_contenedor.bottom-right.vertical dl button,
+.fab_element_contenedor.bottom-left dl button,
+.fab_element_contenedor.bottom-right dl button{
   transform: scale(.4) translateY(40px) translateX(0px);
 }
 /*default*/
-.fab_contenedor.default{
+.fab_element_contenedor.default{
   left: 10px;
   top: 10px;
 }
 /*Arriba izquiera*/
-.fab_contenedor.top-left{
+.fab_element_contenedor.top-left{
   left: 10px;
   top: 10px;
   display: flex;
   flex-direction: column-reverse;
 }
-.fab_contenedor.top-left.vertical , .fab_contenedor.top-left.vertical dl{
+.fab_element_contenedor.top-left.vertical , .fab_element_contenedor.top-left.vertical dl{
   flex-direction: column-reverse !important;
 }
-.fab_contenedor.top-left.horizontal, .fab_contenedor.top-left.horizontal dl{
+.fab_element_contenedor.top-left.horizontal, .fab_element_contenedor.top-left.horizontal dl{
   flex-direction: row-reverse !important;
 }
-.fab_contenedor.top-left.horizontal dl button{
+.fab_element_contenedor.top-left.horizontal dl button{
   transform: scale(.4) translateY(0px) translateX(-40px);
 }
 /*Arriba derecha*/
-.fab_contenedor.top-right{
+.fab_element_contenedor.top-right{
   right: 10px;
   top: 10px;
   display: flex;
   flex-direction: column-reverse;
 }
-.fab_contenedor.top-right.vertical , .fab_contenedor.top-right.vertical dl{
+.fab_element_contenedor.top-right.vertical , .fab_element_contenedor.top-right.vertical dl{
   flex-direction: column-reverse !important;
 }
-.fab_contenedor.top-right.horizontal, .fab_contenedor.top-right.horizontal dl{
+.fab_element_contenedor.top-right.horizontal, .fab_element_contenedor.top-right.horizontal dl{
   flex-direction: row !important;
 }
-.fab_contenedor.top-right.horizontal dl button{
+.fab_element_contenedor.top-right.horizontal dl button{
   transform: scale(.4) translateY(0px) translateX(40px);
 }
 /*Abajo izquierda*/
-.fab_contenedor.bottom-left{
+.fab_element_contenedor.bottom-left{
   left: 10px;
   bottom: 10px;
   display: flex;
   flex-direction: column;
 }
-.fab_contenedor.bottom-left.vertical , .fab_contenedor.bottom-left.vertical dl{
+.fab_element_contenedor.bottom-left.vertical , .fab_element_contenedor.bottom-left.vertical dl{
   flex-direction: column !important;
 }
-.fab_contenedor.bottom-left.horizontal, .fab_contenedor.bottom-left.horizontal dl{
+.fab_element_contenedor.bottom-left.horizontal, .fab_element_contenedor.bottom-left.horizontal dl{
   flex-direction: row-reverse !important;
 }
-.fab_contenedor.bottom-left.horizontal dl button{
+.fab_element_contenedor.bottom-left.horizontal dl button{
   transform: scale(.4) translateY(0px) translateX(-40px);
 }
 /*Abajo derecha*/
-.fab_contenedor.bottom-right{
+.fab_element_contenedor.bottom-right{
   right: 10px;
   bottom: 10px;
   display: flex;
   flex-direction: column;
 }
-.fab_contenedor.bottom-right.vertical , .fab_contenedor.bottom-right.vertical dl{
+.fab_element_contenedor.bottom-right.vertical , .fab_element_contenedor.bottom-right.vertical dl{
   flex-direction: column !important;
 }
-.fab_contenedor.bottom-right.horizontal, .fab_contenedor.bottom-right.horizontal dl{
+.fab_element_contenedor.bottom-right.horizontal, .fab_element_contenedor.bottom-right.horizontal dl{
   flex-direction: row !important;
 }
-.fab_contenedor.bottom-right.horizontal dl button{
+.fab_element_contenedor.bottom-right.horizontal dl button{
   transform: scale(.4) translateY(0px) translateX(40px);
 }
