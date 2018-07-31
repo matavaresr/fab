@@ -3,40 +3,52 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Prueba</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link rel="stylesheet" href="fab.css">
 		<style media="screen">
 		</style>
 	</head>
 	<body>
 		<div id="cont"></div>
+		<div style="width: 400px;height: 60px;position:  absolute;top: 0px;right:  0px;box-shadow: 4px 4px 14px 0px rgb(95, 95, 95);display:  inline-flex;padding: 10px;">
+			<div style="display: flex;align-items: center;flex-direction: column;justify-content: center;" id="modo">
+				<label>Modo</label>
+				<div style="height:  50%;">
+					<i class="fab fa-youtube"></i>
+	      	<i class="fab fa-youtube"></i>
+	    		<i class="fab fa-youtube"></i>
+				</div>
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
 	</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.js"></script>
 	<script src="fab.js"></script>
 	<script type="text/javascript">
 		var fab = new Fab({
 			selector: "#cont",
+			on: 'hover',
 			button: {
-				style: "large teal",
+				class: "large teal",
 				html: ""
 			},
 			icon:{
-				style: "amazon icon",
+				class: "fab fa-youtube",
 				html: ""
 			},
-			// "top-left" || "top-right" || "bottom-left" || "bottom-right"
-			position: "bottom-lef",
-			// "horizontal" || "vertical"
+			position: "bottom-left",
 			direction: "vertical",
 			buttons:[
 				{
 					button: {
-						style: "small yellow",
+						class: "small yellow",
 						html: ""
 					},
 					icon:{
-						style: "hdd icon",
+						class: "hdd icon",
 						html: ""
 					},
 					onClick: function(){
@@ -45,15 +57,28 @@
 				},
 				{
 					button: {
-						style: "small red",
+						class: "small red",
 						html: ""
 					},
 					icon:{
-						style: "book icon",
+						class: "book icon",
 						html: ""
 					},
 					onClick: function(){
 						console.log("ice");
+					}
+				},
+				{
+					button: {
+						class: "small",
+						html: ""
+					},
+					icon:{
+						class: "arrow right icon",
+						html: ""
+					},
+					onClick: function(){
+						console.log("ground");
 					}
 				}
 			],
@@ -66,3 +91,4 @@
 		});
 	</script>
 </html>
+
