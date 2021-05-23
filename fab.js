@@ -18,7 +18,7 @@ function Fab(json){
   __element.classList.add(json.direction);
 
   __element.insertAdjacentHTML('beforeend',
-    `<button class='fab_element primary ${json.button.class}'>
+    `<button class='fab_element primary ${json.button.class}'  type='button'>
       ${json.button.html}
       <i class='${json.icon.class}'>${json.icon.html}</i>
   	</button>`);
@@ -28,7 +28,7 @@ function Fab(json){
   json.buttons.forEach(function(e, i){
     __element.querySelector('dl').insertAdjacentHTML('afterbegin',
     `<dt>
-      <button class="fab_element ${e.button.class} btn${i}">
+      <button class="fab_element ${e.button.class} btn${i}"  title="${e.button.title}">
         ${e.button.html}
     	  <i class="${e.icon.class}">${e.icon.html}</i>
     	</button>
